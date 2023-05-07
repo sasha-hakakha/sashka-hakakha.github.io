@@ -1,29 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import {MatCardModule} from '@angular/material/card'; 
+import { MatCardModule } from '@angular/material/card'; 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { PgpComponent } from './pgp/pgp.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { FrontPageComponent } from './front-page/front-page.component';
 
-const routes: Routes = [
-  { path: 'pgp', component: PgpComponent}
-]
 @NgModule({
   declarations: [
     AppComponent,
-    PgpComponent
+    PgpComponent,
+    FrontPageComponent
   ],
   imports: [
     BrowserModule,
     MatCardModule,
     MatToolbarModule,
-    RouterModule.forRoot(routes),
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
-  exports:[RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
