@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "ghpages:deploy": "ng build --output-path docs --base-href sashka-hakakha.github.io"
+    "build:ghpage": "ng build --output-path docs --base-href sashka-hakakha.github.io"
   },
   "private": true,
   "dependencies": {

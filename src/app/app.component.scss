@@ -14,3 +14,30 @@ body {
     font-size: 3em;
     text-align: center;
 }
+
+.link-section{
+    text-align: center;
+    border-bottom: 1px solid $neon-blue;
+    padding-bottom: 20px;
+}
+.link{
+    color: $neon-pink;
+    font-size: 2em;
+}
+
+.lain{
+    display: flex;
+    align-items: center;
+}
+
+.lain-image{
+    padding-top: 20px;
+    max-width: 100%;
+    height: auto;
+    margin-right: 30px;
+}
+
+.lain-text{
+    color: $terminal-green;
+    font-size: 2.5em;
+}
