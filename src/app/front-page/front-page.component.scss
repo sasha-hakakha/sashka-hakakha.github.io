@@ -44,17 +44,19 @@ body {
 .lain{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .lain-image{
     padding-top: 20px;
     max-width: 100%;
     height: auto;
-    margin-right: 30px;
+    margin-right: 0;
 }
 
 .lain-text{
     color: $terminal-green;
+    width: 100%;
     font-size: 2.5em;
 }
 
