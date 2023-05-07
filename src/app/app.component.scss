@@ -1,0 +1,16 @@
+//https://coolors.co/2aff00-00a8ff-ff00a8-f2e3bc-c19875
+$terminal-green: #2AFF00;
+$neon-blue: #00A8FF;
+$neon-pink: #FF00A8;
+$light-gray: #B3B3B3;
+$red: #FF0000; 
+body {
+  background-image: url('/assets/obsidian.png');
+  background-repeat: repeat;
+}
+
+.title{
+    color: $red;
+    font-size: 3em;
+    text-align: center;
+}
