@@ -1,4 +1,5 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-front-page',
@@ -6,6 +7,18 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./front-page.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class FrontPageComponent {
-  title = 'sasha'
+export class FrontPageComponent implements OnInit {
+
+  constructor(
+    private titleService: Title,
+    private metaService: Meta
+  ) { }
+
+  ngOnInit(): void {
+    this.titleService.setTitle('Sasha');
+    this.metaService.updateTag({
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    }, 'name=viewport');
+  }
 }
