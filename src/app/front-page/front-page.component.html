@@ -1,24 +1,20 @@
-<mat-grid-list cols="1" [cols]="numColumns" rowHeight="fit" [gutterSize]="'0px'" (window:resize)="onResize($event)">
-  <mat-grid-tile>
+<div class="content-container">
     <h1 class="title">Sasha Hakakha</h1>
     <div class="link-section">
-      <li><a class="link" routerLink="/pgp" routerLinkActive="active">PGP</a></li>
+        <li><a class="link" routerLink="/pgp" routerLinkActive="active">PGP</a></li>
     </div>
-  </mat-grid-tile>
-  <mat-grid-tile>
     <div class="lain">
-      <img class="lain-image" src="/assets/lain.png" alt="she's literally me">
-      <p class="lain-text">
-        Hello! I am Sasha Hakakha.
-        <br><br>
-        I am a software engineer that likes
-        emacs+evil, rust, and free (as in freedom) software.
-        <br><br>
-        On the left is <em><strong>literally</strong></em> me.
-        <br><br>
-        Contact: me@&#123;this website&#125;
-      </p>
+        <img class="lain-image" src="/assets/lain.png" alt="she's literally me">
+        <p class="lain-text">
+            Hello! I am Sasha Hakakha.
+            <br><br>
+            I am a software engineer that likes
+            emacs+evil, rust, and free (as in freedom) software.
+            <br><br>
+            On the left is <em><strong>literally</strong></em> me.
+            <br><br>
+            Contact: me@&#123;this website&#125;
+        </p>
     </div>
-  </mat-grid-tile>
-</mat-grid-list>
+</div>
 <router-outlet></router-outlet>
