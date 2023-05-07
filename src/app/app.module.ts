@@ -7,6 +7,7 @@ import { PgpComponent } from './pgp/pgp.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { FrontPageComponent } from './front-page/front-page.component';
+import { MatGridListModule  } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FrontPageComponent } from './front-page/front-page.component';
     MatCardModule,
     MatToolbarModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

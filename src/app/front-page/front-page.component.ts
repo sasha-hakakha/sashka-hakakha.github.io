@@ -1,5 +1,6 @@
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit, HostListener } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { MatGridList } from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-front-page',
@@ -8,6 +9,7 @@ import { Meta, Title } from '@angular/platform-browser';
   encapsulation: ViewEncapsulation.None
 })
 export class FrontPageComponent implements OnInit {
+  numColumns = 1;
 
   constructor(
     private titleService: Title,
@@ -20,5 +22,11 @@ export class FrontPageComponent implements OnInit {
       name: 'viewport',
       content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
     }, 'name=viewport');
+    this.numColumns = (window.innerWidth <= 768) ? 1 : 2;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any){
+    this.numColumns = (event.target.innerWidth <= 768) ? 1 : 2;
   }
 }
