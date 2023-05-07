@@ -5,6 +5,13 @@ $neon-pink: #FF00A8;
 $light-gray: #B3B3B3;
 $red: #FF0000; 
 
+*,
+*::before,
+*::after {
+  margin: 10px;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -45,13 +52,15 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .lain-image{
     padding-top: 20px;
     max-width: 100%;
     height: auto;
-    margin-right: 0;
+    margin-right: 20px;
 }
 
 .lain-text{
